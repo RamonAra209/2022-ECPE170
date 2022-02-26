@@ -1,0 +1,102 @@
+==14933== Memcheck, a memory error detector
+==14933== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==14933== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==14933== Command: ./amplify IMAGES/Lenna_org_1024.pgm 11 1.1 2
+==14933== Parent PID: 10736
+==14933== 
+==14933== Invalid read of size 4
+==14933==    at 0x10CB28: vertical_edge_keeping(float*, float*, float*, int, int, int, float*, float*) (amplify.h:355)
+==14933==    by 0x1095A7: main (main.c:120)
+==14933==  Address 0xa0ac040 is 0 bytes after a block of size 4,194,304 alloc'd
+==14933==    at 0x4849D8C: malloc (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==14933==    by 0x109407: main (main.c:77)
+==14933== 
+==14933== Invalid read of size 4
+==14933==    at 0x10C368: vertical_edge_keeping(float*, float*, float*, int, int, int, float*, float*) (amplify.h:358)
+==14933==    by 0x1095A7: main (main.c:120)
+==14933==  Address 0xa0ac044 is 4 bytes after a block of size 4,194,304 alloc'd
+==14933==    at 0x4849D8C: malloc (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==14933==    by 0x109407: main (main.c:77)
+==14933== 
+==14933== Invalid read of size 4
+==14933==    at 0x10D224: horizontal_edge_keeping(float*, float*, float*, int, int, int, float*, float*) (amplify.h:178)
+==14933==    by 0x1095DB: main (main.c:123)
+==14933==  Address 0xa0ac040 is 0 bytes after a block of size 4,194,304 alloc'd
+==14933==    at 0x4849D8C: malloc (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==14933==    by 0x109407: main (main.c:77)
+==14933== 
+==14933== Conditional jump or move depends on uninitialised value(s)
+==14933==    at 0x1096D8: main (main.c:138)
+==14933== 
+==14933== Conditional jump or move depends on uninitialised value(s)
+==14933==    at 0x1096E4: main (main.c:144)
+==14933== 
+==14933== Conditional jump or move depends on uninitialised value(s)
+==14933==    at 0x1096F0: main (main.c:145)
+==14933== 
+==14933== 
+==14933== More than 10000000 total errors detected.  I'm not reporting any more.
+==14933== Final error counts will be inaccurate.  Go fix your program!
+==14933== Rerun with --error-limit=no to disable this cutoff.  Note
+==14933== that errors may occur in your program without prior warning from
+==14933== Valgrind, because errors are no longer being displayed.
+==14933== 
+==14933== 
+==14933== HEAP SUMMARY:
+==14933==     in use at exit: 50,332,668 bytes in 10 blocks
+==14933==   total heap usage: 89 allocs, 79 frees, 118,633,132 bytes allocated
+==14933== 
+==14933== 16 bytes in 1 blocks are definitely lost in loss record 1 of 10
+==14933==    at 0x4849D8C: malloc (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==14933==    by 0x10B677: mean_keeping(float*, float*, int, int, int, float*, float*, float*) (amplify.h:34)
+==14933==    by 0x10979B: main (main.c:158)
+==14933== 
+==14933== 36 bytes in 1 blocks are definitely lost in loss record 2 of 10
+==14933==    at 0x4849D8C: malloc (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==14933==    by 0x10B663: mean_keeping(float*, float*, int, int, int, float*, float*, float*) (amplify.h:32)
+==14933==    by 0x10979B: main (main.c:158)
+==14933== 
+==14933== 484 bytes in 1 blocks are definitely lost in loss record 3 of 10
+==14933==    at 0x4849D8C: malloc (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==14933==    by 0x109313: main (main.c:60)
+==14933== 
+==14933== 484 bytes in 1 blocks are definitely lost in loss record 4 of 10
+==14933==    at 0x4849D8C: malloc (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==14933==    by 0x109323: main (main.c:61)
+==14933== 
+==14933== 4,194,304 bytes in 1 blocks are definitely lost in loss record 5 of 10
+==14933==    at 0x4849D8C: malloc (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==14933==    by 0x1090AB: read_image_template<float> (image_template.h:38)
+==14933==    by 0x1090AB: main (main.c:48)
+==14933== 
+==14933== 4,194,304 bytes in 1 blocks are definitely lost in loss record 6 of 10
+==14933==    at 0x4849D8C: malloc (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==14933==    by 0x10941B: main (main.c:79)
+==14933== 
+==14933== 4,194,304 bytes in 1 blocks are definitely lost in loss record 7 of 10
+==14933==    at 0x4849D8C: malloc (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==14933==    by 0x109433: main (main.c:80)
+==14933== 
+==14933== 4,194,304 bytes in 1 blocks are definitely lost in loss record 8 of 10
+==14933==    at 0x4849D8C: malloc (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==14933==    by 0x10B05F: double_thresh(float*, float*, int, int) (main.h:127)
+==14933==    by 0x109553: main (main.c:109)
+==14933== 
+==14933== 16,777,216 bytes in 1 blocks are possibly lost in loss record 9 of 10
+==14933==    at 0x4849D8C: malloc (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==14933==    by 0x1093D7: main (main.c:74)
+==14933== 
+==14933== 16,777,216 bytes in 1 blocks are possibly lost in loss record 10 of 10
+==14933==    at 0x4849D8C: malloc (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==14933==    by 0x1093F3: main (main.c:75)
+==14933== 
+==14933== LEAK SUMMARY:
+==14933==    definitely lost: 16,778,236 bytes in 8 blocks
+==14933==    indirectly lost: 0 bytes in 0 blocks
+==14933==      possibly lost: 33,554,432 bytes in 2 blocks
+==14933==    still reachable: 0 bytes in 0 blocks
+==14933==         suppressed: 0 bytes in 0 blocks
+==14933== 
+==14933== Use --track-origins=yes to see where uninitialised values come from
+==14933== For lists of detected and suppressed errors, rerun with: -s
+==14933== ERROR SUMMARY: 10000010 errors from 16 contexts (suppressed: 0 from 0)

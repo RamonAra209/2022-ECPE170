@@ -13,7 +13,7 @@
 #include "helper_functions.h"
 #include "your_functions.h"
 
-#define ARRAY_SIZE 100000 //! Culprit is 15358
+#define ARRAY_SIZE 110000 //! Culprit is 15358
 
 int main(int argc, char *argv[])
 {
