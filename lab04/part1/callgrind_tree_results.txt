@@ -1,0 +1,743 @@
+--------------------------------------------------------------------------------
+Profile data file 'callgrind_tree.out' (creator: callgrind-3.15.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 19485400
+Trigger: Program termination
+Profiled target:  ./sorting_program tree (PID 7356, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       100
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir         
+--------------------------------------------------------------------------------
+99,462,699  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir          file:function
+--------------------------------------------------------------------------------
+46,597,696  your_functions.c:insert_element'2 [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+12,199,819  /build/glibc-iW00TY/glibc-2.31/malloc/malloc.c:_int_malloc'2 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+ 9,399,727  /build/glibc-iW00TY/glibc-2.31/malloc/malloc.c:_int_free [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+ 4,599,998  your_functions.c:inorder'2 [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+ 4,000,149  /build/glibc-iW00TY/glibc-2.31/malloc/malloc.c:_int_malloc [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+ 3,800,011  /build/glibc-iW00TY/glibc-2.31/malloc/malloc.c:malloc [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+ 3,700,026  /build/glibc-iW00TY/glibc-2.31/stdlib/random.c:random [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+ 3,399,993  your_functions.c:free_btree'2 [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+ 2,500,000  /build/glibc-iW00TY/glibc-2.31/malloc/malloc.c:free [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+ 2,393,550  /build/glibc-iW00TY/glibc-2.31/stdlib/random_r.c:random_r [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+ 1,999,987  helper_functions.c:verifySort'2 [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+ 1,700,008  helper_functions.c:initArray'2 [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+ 1,300,000  your_functions.c:create_node [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+ 1,100,000  your_functions.c:malloc
+   500,000  /build/glibc-iW00TY/glibc-2.31/stdlib/rand.c:rand [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+    93,550  /build/glibc-iW00TY/glibc-2.31/stdlib/random_r.c:random_r'2 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+    57,298  /build/glibc-iW00TY/glibc-2.31/elf/dl-addr.c:_dl_addr'2 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+    18,991  /build/glibc-iW00TY/glibc-2.31/elf/dl-lookup.c:do_lookup_x'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+    18,466  /build/glibc-iW00TY/glibc-2.31/elf/dl-tunables.c:__GI___tunables_init'2
+    10,460  /build/glibc-iW00TY/glibc-2.31/elf/dl-lookup.c:_dl_lookup_symbol_x'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+     9,794  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/aarch64/dl-machine.h:_dl_relocate_object'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+     6,758  /build/glibc-iW00TY/glibc-2.31/elf/dl-lookup.c:do_lookup_x [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+     6,330  /build/glibc-iW00TY/glibc-2.31/elf/dl-tunables.h:__GI___tunables_init'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+     5,897  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/strcmp.S:strcmp [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+     5,594  /build/glibc-iW00TY/glibc-2.31/elf/do-rel.h:_dl_relocate_object'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+     4,703  /build/glibc-iW00TY/glibc-2.31/elf/dl-lookup.c:check_match [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+     2,566  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/aarch64/dl-machine.h:_dl_lookup_symbol_x'2
+     2,321  /build/glibc-iW00TY/glibc-2.31/malloc/malloc.c:sysmalloc [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+       890  /build/glibc-iW00TY/glibc-2.31/elf/dl-version.c:_dl_check_map_versions'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       836  /build/glibc-iW00TY/glibc-2.31/elf/dl-cache.c:_dl_cache_libcmp [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       813  /build/glibc-iW00TY/glibc-2.31/elf/dl-lookup.c:_dl_lookup_symbol_x [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       809  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/strcmp.S:strcmp'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       693  /build/glibc-iW00TY/glibc-2.31/malloc/malloc.c:sysmalloc'2 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+       632  /build/glibc-iW00TY/glibc-2.31/misc/sbrk.c:sbrk [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+       617  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:dl_main'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       558  /build/glibc-iW00TY/glibc-2.31/elf/dl-load.c:_dl_map_object_from_fd'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       551  /build/glibc-iW00TY/glibc-2.31/libio/fileops.c:_IO_file_xsputn@@GLIBC_2.17 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+       546  /build/glibc-iW00TY/glibc-2.31/elf/dl-minimal.c:malloc [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       523  /build/glibc-iW00TY/glibc-2.31/malloc/malloc.c:malloc_init_state [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+       518  /build/glibc-iW00TY/glibc-2.31/elf/dl-object.c:_dl_new_object'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       507  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/aarch64/dl-machine.h:_dl_start'2
+       500  /build/glibc-iW00TY/glibc-2.31/libio/fileops.c:_IO_file_overflow@@GLIBC_2.17 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+       496  /build/glibc-iW00TY/glibc-2.31/elf/dl-deps.c:_dl_map_object_deps'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       464  /build/glibc-iW00TY/glibc-2.31/elf/get-dynamic-info.h:_dl_map_object_from_fd'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       457  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/memset.S:memset [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       426  /build/glibc-iW00TY/glibc-2.31/elf/dl-misc.c:_dl_name_match_p [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       422  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/multiarch/../memcpy.S:memcpy [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       404  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/multiarch/../strlen.S:strlen [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       394  /build/glibc-iW00TY/glibc-2.31/elf/dl-environ.c:_dl_next_ld_env_entry [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       384  /build/glibc-iW00TY/glibc-2.31/elf/dl-reloc.c:_dl_relocate_object'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       374  /build/glibc-iW00TY/glibc-2.31/elf/dl-load.c:open_verify.isra.0.constprop.0 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       335  /build/glibc-iW00TY/glibc-2.31/elf/dl-tunables.c:__GI___tunables_init [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       323  /build/glibc-iW00TY/glibc-2.31/elf/dl-load.c:_dl_map_object [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       322  /build/glibc-iW00TY/glibc-2.31/elf/dl-deps.c:_dl_catch_exception
+       307  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/strchr.S:index [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       300  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/generic/ldsodefs.h:_dl_relocate_object'2
+       281  /build/glibc-iW00TY/glibc-2.31/elf/../elf/dl-sysdep.c:_dl_sysdep_start'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       279  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/generic/ldsodefs.h:do_lookup_x'2
+       266  /build/glibc-iW00TY/glibc-2.31/elf/dl-cache.c:_dl_load_cache_lookup'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       261  ???:_dl_start
+       257  /build/glibc-iW00TY/glibc-2.31/elf/do-rel.h:_dl_start'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       253  /build/glibc-iW00TY/glibc-2.31/elf/dl-load.c:_dl_init_paths'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       250  /build/glibc-iW00TY/glibc-2.31/misc/../sysdeps/unix/sysv/linux/generic/brk.c:brk [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+       249  /build/glibc-iW00TY/glibc-2.31/string/strcspn.c:strcspn'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       244  /build/glibc-iW00TY/glibc-2.31/elf/dl-load.c:open_path'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       227  /build/glibc-iW00TY/glibc-2.31/elf/get-dynamic-info.h:dl_main'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       224  /build/glibc-iW00TY/glibc-2.31/elf/dl-tunables.c:__tunable_get_val [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       222  /build/glibc-iW00TY/glibc-2.31/elf/dl-hwcaps.c:_dl_important_hwcaps'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       219  /build/glibc-iW00TY/glibc-2.31/elf/dl-load.c:open_verify.isra.0.constprop.0'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       200  /build/glibc-iW00TY/glibc-2.31/elf/dl-sort-maps.c:_dl_sort_maps [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       197  /build/glibc-iW00TY/glibc-2.31/elf/../elf/dl-sysdep.c:_dl_sysdep_start [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       196  /build/glibc-iW00TY/glibc-2.31/libio/fileops.c:new_do_write [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+       186  /build/glibc-iW00TY/glibc-2.31/libio/fileops.c:_IO_file_xsputn@@GLIBC_2.17'2 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+       183  /build/glibc-iW00TY/glibc-2.31/elf/dl-minimal.c:strsep'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       179  /build/glibc-iW00TY/glibc-2.31/elf/dl-runtime.c:_dl_fixup [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       174  /build/glibc-iW00TY/glibc-2.31/elf/./dl-map-segments.h:_dl_map_object_from_fd'2
+       172  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:dl_main [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       171  /build/glibc-iW00TY/glibc-2.31/string/mempcpy.c:mempcpy [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+       169  /build/glibc-iW00TY/glibc-2.31/elf/get-dynamic-info.h:_dl_start'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       167  /build/glibc-iW00TY/glibc-2.31/libio/genops.c:_IO_default_xsputn'2 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+       166  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/aarch64/dl-machine.h:_dl_relocate_object [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       164  /build/glibc-iW00TY/glibc-2.31/malloc/morecore.c:__default_morecore [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+       162  /build/glibc-iW00TY/glibc-2.31/elf/dl-sort-maps.c:_dl_sort_maps'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       154  ???:call_init.part.0 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       149  /build/glibc-iW00TY/glibc-2.31/elf/dl-version.c:_dl_check_map_versions [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       143  /build/glibc-iW00TY/glibc-2.31/elf/dl-load.c:open_path [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       138  /build/glibc-iW00TY/glibc-2.31/malloc/arena.c:ptmalloc_init.part.0'2 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+       135  /build/glibc-iW00TY/glibc-2.31/io/../sysdeps/unix/sysv/linux/open64_nocancel.c:__open_nocancel [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       134  /build/glibc-iW00TY/glibc-2.31/libio/ioputs.c:puts [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+       132  /build/glibc-iW00TY/glibc-2.31/elf/dl-tunables.c:__tunable_get_val'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       129  /build/glibc-iW00TY/glibc-2.31/elf/dl-load.c:_dl_map_object_from_fd [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       126  /build/glibc-iW00TY/glibc-2.31/elf/dl-deps.c:_dl_map_object_deps [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       126  /build/glibc-iW00TY/glibc-2.31/stdio-common/vfprintf-internal.c:__vfprintf_internal'2 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+       126  /build/glibc-iW00TY/glibc-2.31/stdlib/cxa_finalize.c:__cxa_finalize [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+       122  /build/glibc-iW00TY/glibc-2.31/elf/dl-load.c:_dl_new_object'2
+       121  /build/glibc-iW00TY/glibc-2.31/elf/dl-object.c:_dl_add_to_namespace_list [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       116  /build/glibc-iW00TY/glibc-2.31/elf/dl-load.c:fillin_rpath'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       115  /build/glibc-iW00TY/glibc-2.31/elf/dl-fini.c:_dl_fini'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+       112  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/multiarch/../strlen.S:__GI_strlen [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+       108  /build/glibc-iW00TY/glibc-2.31/libio/fileops.c:_IO_file_write@@GLIBC_2.17 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+       106  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/aarch64/dl-machine.h:_dl_lookup_symbol_x
+       106  /build/glibc-iW00TY/glibc-2.31/setjmp/../sysdeps/aarch64/setjmp.S:__sigsetjmp [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+       104  /build/glibc-iW00TY/glibc-2.31/elf/dl-runtime.c:_dl_lookup_symbol_x
+       104  /build/glibc-iW00TY/glibc-2.31/libio/genops.c:_IO_flush_all_lockp'2 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        99  /build/glibc-iW00TY/glibc-2.31/elf/dl-tunables.h:__GI___tunables_init [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        96  /build/glibc-iW00TY/glibc-2.31/elf/dl-minimal.c:calloc [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        96  /build/glibc-iW00TY/glibc-2.31/elf/dl-reloc.c:_dl_protect_relro [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        93  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/multiarch/../memcpy.S:memcpy'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        91  /build/glibc-iW00TY/glibc-2.31/malloc/malloc.c:_int_free'2 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        91  /build/glibc-iW00TY/glibc-2.31/stdio-common/vfprintf-internal.c:__vfprintf_internal [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        88  /build/glibc-iW00TY/glibc-2.31/elf/dl-lookup.c:_dl_setup_hash [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        86  /build/glibc-iW00TY/glibc-2.31/libio/genops.c:_IO_cleanup'2 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        82  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/generic/ldsodefs.h:_dl_new_object'2
+        80  /build/glibc-iW00TY/glibc-2.31/elf/dl-load.c:_dl_important_hwcaps
+        80  /build/glibc-iW00TY/glibc-2.31/io/../sysdeps/unix/sysv/linux/write.c:write [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        80  /build/glibc-iW00TY/glibc-2.31/stdio-common/vfprintf-internal.c:_IO_file_xsputn@@GLIBC_2.17
+        76  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/strchrnul.S:strchrnul [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        72  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/unix/sysv/linux/dl-sysdep.c:_dl_discover_osversion [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        70  /build/glibc-iW00TY/glibc-2.31/elf/dl-load.c:_dl_map_object'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        70  /build/glibc-iW00TY/glibc-2.31/misc/../sysdeps/unix/sysv/linux/mmap64.c:mmap [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        69  /build/glibc-iW00TY/glibc-2.31/elf/dl-fini.c:0x00000000000005e8
+        69  /build/glibc-iW00TY/glibc-2.31/stdlib/exit.c:_dl_fini
+        68  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/multiarch/../memcpy.S:__GI_memcpy [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        67  /build/glibc-iW00TY/glibc-2.31/elf/./dl-map-segments.h:_dl_map_object_from_fd [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        67  /build/glibc-iW00TY/glibc-2.31/stdio-common/_itoa.c:_itoa_word [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        63  /build/glibc-iW00TY/glibc-2.31/libio/ioputs.c:_IO_file_xsputn@@GLIBC_2.17
+        61  /build/glibc-iW00TY/glibc-2.31/elf/get-dynamic-info.h:dl_main [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        60  /build/glibc-iW00TY/glibc-2.31/elf/dl-error-skeleton.c:_dl_catch_exception'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        59  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:init_tls [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        58  /build/glibc-iW00TY/glibc-2.31/libio/genops.c:_IO_file_setbuf@@GLIBC_2.17
+        58  /build/glibc-iW00TY/glibc-2.31/nptl/register-atfork.c:__unregister_atfork [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        57  /build/glibc-iW00TY/glibc-2.31/elf/dl-load.c:fillin_rpath [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        57  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/multiarch/../memcpy.S:strdup
+        55  /build/glibc-iW00TY/glibc-2.31/elf/dl-load.c:_dl_dst_count [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        55  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/memset.S:tcache_init.part.0
+        54  /build/glibc-iW00TY/glibc-2.31/string/strdup.c:strdup [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        53  /build/glibc-iW00TY/glibc-2.31/elf/dl-error-skeleton.c:_dl_catch_exception [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        53  /build/glibc-iW00TY/glibc-2.31/elf/dl-tls.c:_dl_allocate_tls_init'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        52  /build/glibc-iW00TY/glibc-2.31/elf/do-rel.h:_dl_relocate_object [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        52  /build/glibc-iW00TY/glibc-2.31/elf/get-dynamic-info.h:_dl_start [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        49  /build/glibc-iW00TY/glibc-2.31/elf/dl-deps.c:openaux [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        49  /build/glibc-iW00TY/glibc-2.31/stdlib/exit.c:__run_exit_handlers'2 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        49  ???:_dl_init'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        48  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/aarch64/dl-trampoline.S:_dl_fixup
+        48  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:_dl_start_final [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        47  /build/glibc-iW00TY/glibc-2.31/elf/dl-open.c:_dl_find_dso_for_object [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        47  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:_dl_relocate_object'2
+        47  /build/glibc-iW00TY/glibc-2.31/libio/libioP.h:_IO_file_xsputn@@GLIBC_2.17
+        46  /build/glibc-iW00TY/glibc-2.31/elf/dl-addr.c:_dl_addr [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        46  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:_dl_map_object_deps
+        46  sorting.c:main [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+        44  /build/glibc-iW00TY/glibc-2.31/elf/dl-debug.c:_dl_debug_initialize [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        44  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:_dl_new_object
+        44  /build/glibc-iW00TY/glibc-2.31/io/../sysdeps/unix/sysv/linux/generic/xstat.c:_xstat [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        44  /build/glibc-iW00TY/glibc-2.31/libio/fileops.c:_IO_do_write@@GLIBC_2.17 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        43  /build/glibc-iW00TY/glibc-2.31/elf/dl-fini.c:0x00000000000009a0
+        43  /build/glibc-iW00TY/glibc-2.31/malloc/malloc.c:malloc_hook_ini
+        43  /build/glibc-iW00TY/glibc-2.31/stdlib/cxa_atexit.c:__new_exitfn [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        43  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/strrchr.S:rindex [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        42  /build/glibc-iW00TY/glibc-2.31/elf/get-dynamic-info.h:_dl_new_object'2
+        41  /build/glibc-iW00TY/glibc-2.31/elf/dl-tls.c:_dl_determine_tlsoffset'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        39  /build/glibc-iW00TY/glibc-2.31/stdio-common/printf.c:printf [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        36  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/posix/dl-fileid.h:_dl_map_object_from_fd
+        36  /build/glibc-iW00TY/glibc-2.31/io/../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c:_fxstat [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        36  /build/glibc-iW00TY/glibc-2.31/libio/libioP.h:_IO_default_xsputn'2
+        35  /build/glibc-iW00TY/glibc-2.31/libio/filedoalloc.c:_IO_file_doallocate [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        34  /build/glibc-iW00TY/glibc-2.31/csu/../csu/libc-start.c:__internal_atexit
+        34  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/aarch64/dl-trampoline.S:_dl_runtime_resolve [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        34  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/aarch64/dl-trampoline.S:_dl_runtime_resolve'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        33  /build/glibc-iW00TY/glibc-2.31/elf/./dl-load.h:_dl_map_object_from_fd'2
+        33  /build/glibc-iW00TY/glibc-2.31/elf/dl-minimal.c:free [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        33  /build/glibc-iW00TY/glibc-2.31/libio/genops.c:__overflow [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        32  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/aarch64/dl-machine.h:_dl_start
+        31  /build/glibc-iW00TY/glibc-2.31/csu/init-first.c:_init [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        31  /build/glibc-iW00TY/glibc-2.31/elf/dl-object.c:malloc
+        31  ???:__libc_csu_init [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+        30  /build/glibc-iW00TY/glibc-2.31/elf/dl-cache.c:_dl_sysdep_read_whole_file
+        30  /build/glibc-iW00TY/glibc-2.31/elf/dl-tls.c:_dl_allocate_tls_init [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        30  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:_dl_start'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        30  /build/glibc-iW00TY/glibc-2.31/misc/../sysdeps/unix/syscall-template.S:mprotect [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        30  sorting.c:initArray
+        29  /build/glibc-iW00TY/glibc-2.31/elf/dl-tls.c:allocate_dtv [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        28  /build/glibc-iW00TY/glibc-2.31/elf/dl-fini.c:_dl_sort_maps
+        28  /build/glibc-iW00TY/glibc-2.31/elf/dl-load.c:expand_dynamic_string_token [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        28  /build/glibc-iW00TY/glibc-2.31/elf/dl-reloc.c:_dl_relocate_object [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        28  /build/glibc-iW00TY/glibc-2.31/libio/genops.c:_IO_default_setbuf [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        27  /build/glibc-iW00TY/glibc-2.31/elf/dl-hwcaps.c:_dl_important_hwcaps [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        27  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:do_preload [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        27  /build/glibc-iW00TY/glibc-2.31/libio/genops.c:_IO_flush_all_lockp [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        27  /build/glibc-iW00TY/glibc-2.31/malloc/malloc.c:tcache_init.part.0 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        27  /build/glibc-iW00TY/glibc-2.31/stdlib/cxa_atexit.c:__internal_atexit [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        27  /build/glibc-iW00TY/glibc-2.31/string/strcspn.c:strcspn [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        26  /build/glibc-iW00TY/glibc-2.31/elf/dl-misc.c:_dl_sysdep_read_whole_file [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        25  /build/glibc-iW00TY/glibc-2.31/elf/dl-object.c:_dl_new_object [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        25  /build/glibc-iW00TY/glibc-2.31/elf/dl-tls.c:_dl_allocate_tls_storage [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        25  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:handle_preload_list'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        25  /build/glibc-iW00TY/glibc-2.31/libio/fileops.c:_IO_file_overflow@@GLIBC_2.17'2 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        24  /build/glibc-iW00TY/glibc-2.31/libio/genops.c:_IO_default_xsputn [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        24  /build/glibc-iW00TY/glibc-2.31/libio/libioP.h:__overflow
+        24  /build/glibc-iW00TY/glibc-2.31/libio/libioP.h:puts
+        24  /build/glibc-iW00TY/glibc-2.31/malloc/arena.c:sysmalloc
+        24  your_functions.c:insert_element [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+        22  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/aarch64/dl-irel.h:_dl_relocate_object'2
+        22  /build/glibc-iW00TY/glibc-2.31/misc/init-misc.c:__init_misc [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        22  /build/glibc-iW00TY/glibc-2.31/stdio-common/vfprintf-internal.c:_IO_file_xsputn@@GLIBC_2.17'2
+        22  ???:0x00000000000005e8 [/usr/lib/aarch64-linux-gnu/valgrind/vgpreload_core-arm64-linux.so]
+        22  ???:_dl_init
+        21  /build/glibc-iW00TY/glibc-2.31/csu/../csu/libc-start.c:(below main) [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        21  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:_dl_allocate_tls_init
+        21  /build/glibc-iW00TY/glibc-2.31/libio/genops.c:_IO_setb [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        21  /build/glibc-iW00TY/glibc-2.31/malloc/arena.c:ptmalloc_init.part.0 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        20  /build/glibc-iW00TY/glibc-2.31/ctype/ctype-info.c:__ctype_init [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        20  /build/glibc-iW00TY/glibc-2.31/elf/../elf/dl-sysdep.c:__GI___tunables_init
+        20  /build/glibc-iW00TY/glibc-2.31/elf/dl-object.c:_dl_add_to_namespace_list'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        20  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:handle_preload_list [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        20  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:rtld_lock_default_lock_recursive [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        20  your_functions.c:free_btree [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+        19  /build/glibc-iW00TY/glibc-2.31/elf/dl-cache.c:_dl_load_cache_lookup [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        19  /build/glibc-iW00TY/glibc-2.31/elf/dl-fini.c:_dl_fini [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        19  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/multiarch/../strlen.S:strlen'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        19  sorting.c:main'2 [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+        18  /build/glibc-iW00TY/glibc-2.31/elf/../misc/sbrk.c:sbrk [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        18  /build/glibc-iW00TY/glibc-2.31/io/../sysdeps/unix/sysv/linux/close_nocancel.c:__GI___close_nocancel [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        18  /build/glibc-iW00TY/glibc-2.31/libio/vtables.c:check_stdfiles_vtables [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        18  /build/glibc-iW00TY/glibc-2.31/malloc/malloc.c:__default_morecore
+        17  /build/glibc-iW00TY/glibc-2.31/elf/dl-minimal.c:strsep [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        17  /build/glibc-iW00TY/glibc-2.31/elf/dl-tls.c:_dl_determine_tlsoffset [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        17  /build/glibc-iW00TY/glibc-2.31/libio/filedoalloc.c:malloc_hook_ini
+        17  ???:0x00000000000008e0 [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+        17  ???:0x00000000000009a0 [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+        16  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:rtld_lock_default_unlock_recursive [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        16  /build/glibc-iW00TY/glibc-2.31/libio/fileops.c:_IO_file_sync@@GLIBC_2.17 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        16  /build/glibc-iW00TY/glibc-2.31/malloc/scratch_buffer_set_array_size.c:__libc_scratch_buffer_set_array_size [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        16  /build/glibc-iW00TY/glibc-2.31/malloc/scratch_buffer_set_array_size.c:__libc_scratch_buffer_set_array_size'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        16  your_functions.c:tree_sort [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+        15  /build/glibc-iW00TY/glibc-2.31/elf/dl-cache.c:_dl_unload_cache [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        15  /build/glibc-iW00TY/glibc-2.31/elf/dl-error-skeleton.c:_dl_catch_error [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        15  /build/glibc-iW00TY/glibc-2.31/elf/dl-load.c:_dl_init_paths [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        15  /build/glibc-iW00TY/glibc-2.31/elf/dl-minimal.c:malloc'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        15  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:_dl_start [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        15  /build/glibc-iW00TY/glibc-2.31/stdlib/exit.c:__run_exit_handlers [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        15  your_functions.c:inorder [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+        14  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/unix/sysv/linux/aarch64/cpu-features.c:__GI___tunables_init
+        14  /build/glibc-iW00TY/glibc-2.31/elf/dl-tls.c:_dl_add_to_slotinfo'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        14  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:dso_name_valid_for_suid [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        14  /build/glibc-iW00TY/glibc-2.31/misc/sbrk.c:sbrk'2 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        13  /build/glibc-iW00TY/glibc-2.31/elf/dl-error-skeleton.c:_dl_receive_error [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        13  /build/glibc-iW00TY/glibc-2.31/libio/genops.c:_IO_doallocbuf [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        13  /build/glibc-iW00TY/glibc-2.31/stdlib/cxa_thread_atexit_impl.c:__call_tls_dtors [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        13  helper_functions.c:initArray [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+        12  /build/glibc-iW00TY/glibc-2.31/elf/dl-load.c:_dl_load_cache_lookup
+        12  /build/glibc-iW00TY/glibc-2.31/elf/dl-tls.c:_dl_add_to_slotinfo [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        12  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:_dl_allocate_tls_storage
+        12  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:_dl_init_paths
+        12  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:map_doit [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        12  /build/glibc-iW00TY/glibc-2.31/io/../sysdeps/unix/sysv/linux/access.c:access [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        12  /build/glibc-iW00TY/glibc-2.31/io/../sysdeps/unix/sysv/linux/read_nocancel.c:__read_nocancel [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        12  /build/glibc-iW00TY/glibc-2.31/libio/filedoalloc.c:_IO_file_doallocate'2 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        12  /build/glibc-iW00TY/glibc-2.31/libio/genops.c:_IO_cleanup [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        11  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/multiarch/strlen.c:strlen [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        11  ???:0x00000000000005a8 [/usr/lib/aarch64-linux-gnu/valgrind/vgpreload_core-arm64-linux.so]
+        11  ???:0x0000000000000960 [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+        11  helper_functions.c:verifySort [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+        11  sorting.c:verifySort
+        11  your_functions.c:tree_sort'2 [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+        10  /build/glibc-iW00TY/glibc-2.31/elf/../include/scratch_buffer.h:_dl_map_object_deps [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        10  /build/glibc-iW00TY/glibc-2.31/elf/dl-version.c:_dl_check_all_versions [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+        10  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:strcspn
+        10  /build/glibc-iW00TY/glibc-2.31/libio/libioP.h:_IO_cleanup'2
+        10  /build/glibc-iW00TY/glibc-2.31/setjmp/sigjmp.c:__sigjmp_save [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+        10  /build/glibc-iW00TY/glibc-2.31/stdio-common/../libio/libioP.h:__vfprintf_internal [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+         9  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/generic/ldsodefs.h:_dl_relocate_object
+         9  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/unix/sysv/linux/generic/brk.c:brk [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         9  /build/glibc-iW00TY/glibc-2.31/elf/dl-error-skeleton.c:map_doit
+         9  /build/glibc-iW00TY/glibc-2.31/elf/dl-error-skeleton.c:openaux
+         9  /build/glibc-iW00TY/glibc-2.31/elf/dl-tls.c:_dl_next_tls_modid [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         9  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:_dl_catch_error
+         9  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:version_check_doit [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         9  /build/glibc-iW00TY/glibc-2.31/libio/fileops.c:_IO_default_setbuf
+         9  /build/glibc-iW00TY/glibc-2.31/stdlib/cxa_atexit.c:__new_exitfn'2 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+         9  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/multiarch/memchr.c:memchr [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+         9  /build/glibc-iW00TY/glibc-2.31/string/mempcpy.c:mempcpy'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         9  helper_functions.c:puts
+         8  /build/glibc-iW00TY/glibc-2.31/elf/../elf/dl-sysdep.c:dl_main
+         8  /build/glibc-iW00TY/glibc-2.31/elf/dl-deps.c:_dl_sort_maps
+         8  /build/glibc-iW00TY/glibc-2.31/elf/get-dynamic-info.h:_dl_map_object_from_fd [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         8  /build/glibc-iW00TY/glibc-2.31/libio/genops.c:_IO_default_setbuf'2 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+         8  /build/glibc-iW00TY/glibc-2.31/libio/libioP.h:_IO_default_setbuf
+         8  /build/glibc-iW00TY/glibc-2.31/libio/libioP.h:_IO_default_xsputn
+         8  /build/glibc-iW00TY/glibc-2.31/libio/libioP.h:_IO_doallocbuf
+         8  /build/glibc-iW00TY/glibc-2.31/libio/libioP.h:_IO_file_doallocate
+         8  /build/glibc-iW00TY/glibc-2.31/libio/libioP.h:_IO_file_xsputn@@GLIBC_2.17'2
+         8  /build/glibc-iW00TY/glibc-2.31/libio/libioP.h:new_do_write
+         8  /build/glibc-iW00TY/glibc-2.31/stdio-common/../libio/libioP.h:__vfprintf_internal'2
+         8  /build/glibc-iW00TY/glibc-2.31/stdio-common/printf.c:__vfprintf_internal
+         7  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/unix/sysv/linux/dl-vdso-setup.h:dl_main'2
+         7  /build/glibc-iW00TY/glibc-2.31/elf/dl-misc.c:_dl_sysdep_read_whole_file'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         7  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:_dl_relocate_object
+         7  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:_dl_sysdep_start
+         7  /build/glibc-iW00TY/glibc-2.31/malloc/hooks.c:malloc_hook_ini [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+         7  /build/glibc-iW00TY/glibc-2.31/malloc/morecore.c:__default_morecore'2 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+         7  /build/glibc-iW00TY/glibc-2.31/stdlib/exit.c:exit [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+         7  ???:0x0000000000000578 [/usr/lib/aarch64-linux-gnu/valgrind/vgpreload_core-arm64-linux.so]
+         7  ???:0x0000000000000930 [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+         7  your_functions.c:_int_free
+         6  /build/glibc-iW00TY/glibc-2.31/elf/dl-error-skeleton.c:version_check_doit
+         6  /build/glibc-iW00TY/glibc-2.31/elf/dl-tls.c:_dl_count_modids [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         6  /build/glibc-iW00TY/glibc-2.31/elf/dl-version.c:_dl_check_all_versions'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         6  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:_dl_receive_error
+         6  /build/glibc-iW00TY/glibc-2.31/libio/genops.c:_IO_file_doallocate
+         5  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/aarch64/dl-machine.h:__GI___tunables_init
+         5  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/unix/sysv/linux/dl-vdso.h:dl_main'2
+         5  /build/glibc-iW00TY/glibc-2.31/elf/dl-cache.c:_dl_cache_libcmp'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         5  /build/glibc-iW00TY/glibc-2.31/elf/do-rel.h:_dl_start [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         5  /build/glibc-iW00TY/glibc-2.31/libio/fileops.c:_IO_default_xsputn
+         5  /build/glibc-iW00TY/glibc-2.31/libio/fileops.c:_IO_doallocbuf
+         5  /build/glibc-iW00TY/glibc-2.31/libio/fileops.c:_IO_file_setbuf@@GLIBC_2.17 [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+         5  /build/glibc-iW00TY/glibc-2.31/libio/fileops.c:_IO_file_stat [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+         5  /build/glibc-iW00TY/glibc-2.31/libio/libioP.h:_IO_flush_all_lockp'2
+         5  /build/glibc-iW00TY/glibc-2.31/malloc/arena.c:_dl_addr
+         5  /build/glibc-iW00TY/glibc-2.31/misc/../sysdeps/unix/syscall-template.S:munmap [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         5  /build/glibc-iW00TY/glibc-2.31/posix/../sysdeps/unix/syscall-template.S:uname [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         5  ???:0x000000000000061c [/usr/lib/aarch64-linux-gnu/valgrind/vgpreload_core-arm64-linux.so]
+         5  ???:0x00000000000009d4 [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+         5  ???:0x00000000001087e0 [???]
+         5  ???:0x00000000048344e0 [???]
+         5  ???:call_init.part.0'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         4  /build/glibc-iW00TY/glibc-2.31/elf/../include/scratch_buffer.h:_dl_map_object_deps'2
+         4  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/aarch64/dl-irel.h:_dl_lookup_symbol_x
+         4  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/generic/dl-cache.h:_dl_sysdep_read_whole_file
+         4  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/generic/ldsodefs.h:_dl_fini
+         4  /build/glibc-iW00TY/glibc-2.31/elf/dl-deps.c:_dl_map_object
+         4  /build/glibc-iW00TY/glibc-2.31/elf/dl-tls.c:_dl_allocate_tls_storage'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         4  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:_dl_add_to_namespace_list
+         4  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:_dl_check_all_versions
+         4  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:_dl_map_object
+         4  /build/glibc-iW00TY/glibc-2.31/libio/../include/sys/sysmacros.h:_IO_file_doallocate
+         4  /build/glibc-iW00TY/glibc-2.31/malloc/arena.c:malloc_hook_ini
+         4  /build/glibc-iW00TY/glibc-2.31/malloc/hooks.c:ptmalloc_init.part.0
+         4  /build/glibc-iW00TY/glibc-2.31/malloc/morecore.c:sbrk
+         4  /build/glibc-iW00TY/glibc-2.31/stdio-common/printf-parse.h:__vfprintf_internal
+         4  /build/glibc-iW00TY/glibc-2.31/stdlib/exit.c:_IO_cleanup
+         4  ???:0x0000000000000560 [/usr/lib/aarch64-linux-gnu/valgrind/vgpreload_core-arm64-linux.so]
+         4  ???:0x0000000000109414 [???]
+         4  ???:0x00000000048347b4 [???]
+         4  ???:call_weak_fn [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+         4  your_functions.c:puts
+         3  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/aarch64/dl-irel.h:_dl_start'2
+         3  /build/glibc-iW00TY/glibc-2.31/elf/./dl-load.h:_dl_map_object_from_fd
+         3  /build/glibc-iW00TY/glibc-2.31/elf/./setup-vdso.h:dl_main'2
+         3  /build/glibc-iW00TY/glibc-2.31/elf/dl-init.c:_dl_init [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         3  /build/glibc-iW00TY/glibc-2.31/stdio-common/printf-parse.h:__vfprintf_internal'2
+         3  /build/glibc-iW00TY/glibc-2.31/stdlib/cxa_atexit.c:__cxa_atexit [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+         2  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/posix/dl-fileid.h:_dl_map_object_from_fd'2
+         2  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/unix/sysv/linux/dl-sysdep.c:__GI___tunables_init
+         2  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/unix/sysv/linux/dl-vdso-setup.h:dl_main [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         2  /build/glibc-iW00TY/glibc-2.31/elf/dl-debug.c:_dl_debug_state [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         2  /build/glibc-iW00TY/glibc-2.31/setjmp/../sysdeps/aarch64/setjmp.S:_setjmp [/usr/lib/aarch64-linux-gnu/libc-2.31.so]
+         2  ???:0x00000000000010c0 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         2  helper_functions.c:printf
+         1  /build/glibc-iW00TY/glibc-2.31/csu/../csu/libc-start.c:main
+         1  /build/glibc-iW00TY/glibc-2.31/elf/../elf/dl-sysdep.c:_dl_sysdep_start_cleanup [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         1  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/unix/sysv/linux/dl-osinfo.h:dl_main'2
+         1  /build/glibc-iW00TY/glibc-2.31/elf/dl-environ.c:_dl_next_ld_env_entry'2 [/usr/lib/aarch64-linux-gnu/ld-2.31.so]
+         1  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:_dl_add_to_slotinfo
+         1  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c:_dl_determine_tlsoffset
+         1  ???:0x0000000000000630 [/usr/lib/aarch64-linux-gnu/valgrind/vgpreload_core-arm64-linux.so]
+         1  ???:0x00000000000009e8 [/home/parallels/2022_spring_ecpe170/lab04/part1/sorting_program]
+         1  sorting.c:puts
+         1  sorting.c:tree_sort
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: sorting.c
+--------------------------------------------------------------------------------
+Ir 
+
+-- line 11 ----------------------------------------
+ .  #include <string.h>    // For string comparison
+ .  
+ .  #include "helper_functions.h"
+ .  #include "your_functions.h"
+ .  
+ .  #define ARRAY_SIZE 100000 //! Culprit is 15358
+ .  
+ .  int main(int argc, char *argv[])
+37  {
+ .    //! MIGHT NEED TO SEED RANDOM GENERATOR HERE 
+ .  
+ .    int my_array[ARRAY_SIZE];
+ 1    int *temp_array = NULL;
+ 1    bool sorted = false;
+ .   
+ 3    if( argc != 2)
+ .      {
+ .        printf("Program usage: %s sortname\n", argv[0]);
+ .        return 1;
+ .      }
+ .  
+ .    // Fill array with random numbers
+ 4    initArray(my_array, ARRAY_SIZE);
+99,352,589  => /home/parallels/2022_spring_ecpe170/lab04/part1/helper_functions.c:initArray (1x)
+ .  
+ .    // Sort array by chosen algorithm
+30    if(strcmp(argv[1], "bubble") == 0)
+90,902,691  => /home/parallels/2022_spring_ecpe170/lab04/part1/your_functions.c:tree_sort (1x)
+54  => /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/strcmp.S:strcmp (2x)
+ .      bubbleSort(my_array, ARRAY_SIZE);
+ .    else if(strcmp(argv[1], "tree") == 0)
+ 1      tree_sort(my_array,ARRAY_SIZE);
+2,001,042  => sorting.c:main'2 (1x)
+ .    else if(strcmp(argv[1], "merge") == 0)
+ .      {
+ .        // Merge sort needs a second (temporary) array
+ .        // Dynamically allocate this
+ .        temp_array = calloc(ARRAY_SIZE, sizeof(int));
+ .   
+ .        mergeSort(my_array, temp_array, ARRAY_SIZE);
+ .  
+-- line 47 ----------------------------------------
+-- line 49 ----------------------------------------
+ .      }
+ .    else
+ .      {
+ .        printf("Invalid sort algorithm. Must specifiy 'bubble',  'tree', or 'merge'\n");
+ .        return 1;
+ .      }
+ .  
+ .    // Test if array is sorted correctly
+ 5    sorted = verifySort(my_array, ARRAY_SIZE);
+2,001,038  => /home/parallels/2022_spring_ecpe170/lab04/part1/helper_functions.c:verifySort (1x)
+ .  
+ 3    if(sorted)
+ 8      printf("Congrats! Array is sorted correctly\n");
+547  => /build/glibc-iW00TY/glibc-2.31/libio/ioputs.c:puts (1x)
+ .    else
+ .      printf("*** Error: Array sort algorithm fails verification test ***\n");
+ .  
+ 2    return 0;
+13  }
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: your_functions.c
+--------------------------------------------------------------------------------
+Ir         
+
+-- line 84 ----------------------------------------
+         .  // Tree sort algorithm
+         .  //Requires the following steps:
+         .  //1. Construct a Binary Tree using the array elements. If the current element is less than
+         .  //the node, place the element on the left branch, else place it on the right branch. See BTreeNode structure in your_functions.h.
+         .  //2. Once binary tree is constructed, perform in-order traversal of the binary tree (HINT: use recursion).
+         .  //FILL in the functions: inorder, insert_element, and tree_sort for sorting.
+         .  
+         .  void inorder(struct BTreeNode *node, int *array, int *index)
+ 1,000,005  {
+         .  	//Recursive In-order traversal: leftchild, element, rightchild
+   600,003    if (node == NULL) {
+   100,001      return;
+         .    }
+         .  
+   500,000    inorder(node->leftnode, array, index);
+ 4,599,998  => your_functions.c:inorder'2 (1x)
+   900,000    array[*index] = node->element;
+   500,000    (*index)++;
+         .  
+   600,000    inorder(node->rightnode, array, index);
+44,083,695  => your_functions.c:inorder'2 (200,000x)
+   400,002  }
+         .  
+         .  void insert_element(struct BTreeNode **node, int element) 
+ 8,381,404  {
+         .    // 3 cases
+         .    //  1. figuring out what subtree to insert at
+         .    //  2. if left or right child is NULL, create a leaf
+         .    
+         .    //? What do these point to
+         .    //? node:   BTreeNode node (passing through node wont modify)
+         .    //? *node:  points to node (passing through would only modify where its point to)
+         .    //? **node: points to a pointer to a node (passing through would let you modify the children)
+         .  
+ 8,381,404    if (*node == NULL) {
+   500,000      *node = create_node(element);
+       227  => your_functions.c:create_node (1x)
+11,972,106    } else if (element < (*node)->element) {
+ 4,274,140      insert_element(&(*node)->leftnode, element);
+507,759,916  => your_functions.c:insert_element'2 (1,068,535x)
+         .    } else {
+ 4,634,080      insert_element(&(*node)->rightnode, element);
+412,293,458  => your_functions.c:insert_element'2 (926,816x)
+         .    }
+         .    
+ 7,454,588  }
+   300,000  => your_functions.c:insert_element'2 (100,000x)
+         .  
+   300,000  struct BTreeNode* create_node(int element) { 
+   700,000    struct BTreeNode* new_node = malloc(sizeof(struct BTreeNode));
+21,103,565  => /build/glibc-iW00TY/glibc-2.31/malloc/malloc.c:malloc (100,000x)
+   300,000    new_node->element = element;
+   200,000    new_node->leftnode = NULL;
+   200,000    new_node->rightnode = NULL;
+   100,000    return new_node;
+   200,000  }
+         .  
+         .  void free_btree(struct BTreeNode **node)
+   600,003  { 
+   800,004    if (*node == NULL) {
+   100,001      return;
+         .    }
+         .  
+   300,000    free_btree(&(*node)->leftnode);
+15,299,818  => your_functions.c:free_btree'2 (1x)
+   400,000    free_btree(&(*node)->rightnode);
+149,259,477  => your_functions.c:free_btree'2 (100,000x)
+   800,000    free((*node));
+   199,986  => your_functions.c:free_btree'2 (99,993x)
+11,899,839  => /build/glibc-iW00TY/glibc-2.31/malloc/malloc.c:free (100,000x)
+   400,002  }
+         .  
+         .  void tree_sort(int *array, int size)
+         9  {
+         .  
+         .  //1. Construct the binary tree using elements in array
+         .  //2. Traverse the binary tree in-order and update the array
+         .  //3. Free the binary tree
+         7    printf("Using Tree Sort Algorithm \n");
+88,901,632  => /build/glibc-iW00TY/glibc-2.31/libio/ioputs.c:puts (1x)
+         1    struct BTreeNode* root = NULL;
+         1    int iterator = 0;
+         .  
+   700,006    for (int i = 0; i < size; i++) {
+88,901,147  => your_functions.c:tree_sort'2 (1x)
+   700,000      insert_element(&root, array[i]);
+88,901,136  => your_functions.c:insert_element (1x)
+         .    }
+         .  
+         5    inorder(root, array, &iterator);
+19,899,851  => your_functions.c:inorder (1x)
+         .  
+         2    free_btree(&root);
+15,299,838  => your_functions.c:free_btree (1x)
+        10  }
+         .  
+         .  
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: helper_functions.c
+--------------------------------------------------------------------------------
+Ir        
+
+-- line 5 ----------------------------------------
+        .  #include "helper_functions.h"
+        .  
+        .  // Initialize array with random numbers in range from 0 to RAND_MAX
+        .  // Arguments:
+        .  //  (1) Pointer to start of array
+        .  //  (2) Number of elements in array
+        .  // Return value: None
+        .  void initArray(int *array_start, int array_size) 
+        5  {
+        8    printf("Initializing %i elements in array...\n", array_size);
+8,449,801  => /build/glibc-iW00TY/glibc-2.31/stdio-common/printf.c:printf (1x)
+        .  
+        6    for(int i=0; i<array_size; i++)
+8,387,134  => helper_functions.c:initArray'2 (1x)
+        .      {
+1,700,004        array_start[i] = rand();
+6,687,126  => /build/glibc-iW00TY/glibc-2.31/stdlib/rand.c:rand (100,000x)
+        .      }
+        .  
+        .    return;
+        .  }
+        .  
+        .  
+        .  // Bubble sort algorithm
+        .  // Arguments:
+-- line 26 ----------------------------------------
+-- line 52 ----------------------------------------
+        .  
+        .  
+        .  // Test if array is sorted in ascending order
+        .  // Arguments:
+        .  //  (1) Pointer to start of array
+        .  //  (2) Number of elements in array
+        .  // Return value: True (if sorted), false otherwise
+        .  bool verifySort(int *array_start, int array_size)
+        4  {
+        7    printf("Verifying array sorting...\n");
+2,000,469  => /build/glibc-iW00TY/glibc-2.31/libio/ioputs.c:puts (1x)
+        .  
+        3    if(array_size == 1)
+        .      return true;  // Array with 1 element is always sorted
+        3    else if(array_size <= 0) {
+        .      printf("apparently size is <= 0\n");
+        .      return false;  // Invalid array
+        .    }
+        .    else
+        .      {
+  700,000        for(int i=1; i<array_size; i++)
+1,999,987  => helper_functions.c:verifySort'2 (1x)
+        .  	{
+        .  	  // Starting from element 1 (not 0), compare with preceeding
+1,299,987  	  if(array_start[i-1] > array_start[i]) {
+        .        printf("i: %d \n", i);
+        .  	    return false; // Found 1 example out of order - stop searching
+        .      }
+        .  	}
+        .  
+        1        return true;
+        .      }
+        2  }
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  /build/glibc-iW00TY/glibc-2.31/csu/../csu/libc-start.c
+  /build/glibc-iW00TY/glibc-2.31/csu/init-first.c
+  /build/glibc-iW00TY/glibc-2.31/ctype/ctype-info.c
+  /build/glibc-iW00TY/glibc-2.31/elf/../elf/dl-sysdep.c
+  /build/glibc-iW00TY/glibc-2.31/elf/../include/scratch_buffer.h
+  /build/glibc-iW00TY/glibc-2.31/elf/../misc/sbrk.c
+  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/aarch64/dl-irel.h
+  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/aarch64/dl-machine.h
+  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/aarch64/dl-trampoline.S
+  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/generic/dl-cache.h
+  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/generic/ldsodefs.h
+  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/posix/dl-fileid.h
+  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/unix/sysv/linux/aarch64/cpu-features.c
+  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/unix/sysv/linux/dl-osinfo.h
+  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/unix/sysv/linux/dl-sysdep.c
+  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/unix/sysv/linux/dl-vdso-setup.h
+  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/unix/sysv/linux/dl-vdso.h
+  /build/glibc-iW00TY/glibc-2.31/elf/../sysdeps/unix/sysv/linux/generic/brk.c
+  /build/glibc-iW00TY/glibc-2.31/elf/./dl-load.h
+  /build/glibc-iW00TY/glibc-2.31/elf/./dl-map-segments.h
+  /build/glibc-iW00TY/glibc-2.31/elf/./setup-vdso.h
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-addr.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-cache.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-debug.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-deps.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-environ.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-error-skeleton.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-fini.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-hwcaps.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-init.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-load.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-lookup.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-minimal.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-misc.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-object.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-open.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-reloc.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-runtime.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-sort-maps.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-tls.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-tunables.c
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-tunables.h
+  /build/glibc-iW00TY/glibc-2.31/elf/dl-version.c
+  /build/glibc-iW00TY/glibc-2.31/elf/do-rel.h
+  /build/glibc-iW00TY/glibc-2.31/elf/get-dynamic-info.h
+  /build/glibc-iW00TY/glibc-2.31/elf/rtld.c
+  /build/glibc-iW00TY/glibc-2.31/io/../sysdeps/unix/sysv/linux/access.c
+  /build/glibc-iW00TY/glibc-2.31/io/../sysdeps/unix/sysv/linux/close_nocancel.c
+  /build/glibc-iW00TY/glibc-2.31/io/../sysdeps/unix/sysv/linux/generic/xstat.c
+  /build/glibc-iW00TY/glibc-2.31/io/../sysdeps/unix/sysv/linux/open64_nocancel.c
+  /build/glibc-iW00TY/glibc-2.31/io/../sysdeps/unix/sysv/linux/read_nocancel.c
+  /build/glibc-iW00TY/glibc-2.31/io/../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c
+  /build/glibc-iW00TY/glibc-2.31/io/../sysdeps/unix/sysv/linux/write.c
+  /build/glibc-iW00TY/glibc-2.31/libio/../include/sys/sysmacros.h
+  /build/glibc-iW00TY/glibc-2.31/libio/filedoalloc.c
+  /build/glibc-iW00TY/glibc-2.31/libio/fileops.c
+  /build/glibc-iW00TY/glibc-2.31/libio/genops.c
+  /build/glibc-iW00TY/glibc-2.31/libio/ioputs.c
+  /build/glibc-iW00TY/glibc-2.31/libio/libioP.h
+  /build/glibc-iW00TY/glibc-2.31/libio/vtables.c
+  /build/glibc-iW00TY/glibc-2.31/malloc/arena.c
+  /build/glibc-iW00TY/glibc-2.31/malloc/hooks.c
+  /build/glibc-iW00TY/glibc-2.31/malloc/malloc.c
+  /build/glibc-iW00TY/glibc-2.31/malloc/morecore.c
+  /build/glibc-iW00TY/glibc-2.31/malloc/scratch_buffer_set_array_size.c
+  /build/glibc-iW00TY/glibc-2.31/misc/../sysdeps/unix/syscall-template.S
+  /build/glibc-iW00TY/glibc-2.31/misc/../sysdeps/unix/sysv/linux/generic/brk.c
+  /build/glibc-iW00TY/glibc-2.31/misc/../sysdeps/unix/sysv/linux/mmap64.c
+  /build/glibc-iW00TY/glibc-2.31/misc/init-misc.c
+  /build/glibc-iW00TY/glibc-2.31/misc/sbrk.c
+  /build/glibc-iW00TY/glibc-2.31/nptl/register-atfork.c
+  /build/glibc-iW00TY/glibc-2.31/posix/../sysdeps/unix/syscall-template.S
+  /build/glibc-iW00TY/glibc-2.31/setjmp/../sysdeps/aarch64/setjmp.S
+  /build/glibc-iW00TY/glibc-2.31/setjmp/sigjmp.c
+  /build/glibc-iW00TY/glibc-2.31/stdio-common/../libio/libioP.h
+  /build/glibc-iW00TY/glibc-2.31/stdio-common/_itoa.c
+  /build/glibc-iW00TY/glibc-2.31/stdio-common/printf-parse.h
+  /build/glibc-iW00TY/glibc-2.31/stdio-common/printf.c
+  /build/glibc-iW00TY/glibc-2.31/stdio-common/vfprintf-internal.c
+  /build/glibc-iW00TY/glibc-2.31/stdlib/cxa_atexit.c
+  /build/glibc-iW00TY/glibc-2.31/stdlib/cxa_finalize.c
+  /build/glibc-iW00TY/glibc-2.31/stdlib/cxa_thread_atexit_impl.c
+  /build/glibc-iW00TY/glibc-2.31/stdlib/exit.c
+  /build/glibc-iW00TY/glibc-2.31/stdlib/rand.c
+  /build/glibc-iW00TY/glibc-2.31/stdlib/random.c
+  /build/glibc-iW00TY/glibc-2.31/stdlib/random_r.c
+  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/memset.S
+  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/multiarch/../memcpy.S
+  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/multiarch/../strlen.S
+  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/multiarch/memchr.c
+  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/multiarch/strlen.c
+  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/strchr.S
+  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/strchrnul.S
+  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/strcmp.S
+  /build/glibc-iW00TY/glibc-2.31/string/../sysdeps/aarch64/strrchr.S
+  /build/glibc-iW00TY/glibc-2.31/string/mempcpy.c
+  /build/glibc-iW00TY/glibc-2.31/string/strcspn.c
+  /build/glibc-iW00TY/glibc-2.31/string/strdup.c
+
+--------------------------------------------------------------------------------
+Ir         
+--------------------------------------------------------------------------------
+60,697,922  events annotated
+

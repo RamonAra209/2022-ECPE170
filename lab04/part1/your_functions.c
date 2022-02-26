@@ -152,18 +152,11 @@ void tree_sort(int *array, int size)
   struct BTreeNode* root = NULL;
   int iterator = 0;
 
-  // insert_element(&root, 1);
   for (int i = 0; i < size; i++) {
     insert_element(&root, array[i]);
   }
 
   inorder(root, array, &iterator);
-  
-  printf("Array\n");
-  for (int i = 0; i < 10; i++) {
-    printf("%d:%d, ", size-i, array[size - i]);
-  }
-  printf("\n");
 
   free_btree(&root);
 }
