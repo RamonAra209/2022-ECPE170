@@ -1,2 +1,0 @@
-# copying demo.c to /presentation01 directory
-cp demo.c ~/2022_ecpe_170/presentation01

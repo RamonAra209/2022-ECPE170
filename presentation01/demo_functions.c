@@ -3,12 +3,12 @@
 int** create_array(int size) {
     int** my_array = calloc(size, sizeof(int *));
 
-    printf("\nFilling array with random numbers in range of 0 to 1000\n\n");
+    printf("\nFilling array with random numbers in range of 0 to 100\n\n");
     for (int row = 0; row < size; row++) {
         my_array[row] = calloc(size, sizeof(int));
 
         for (int col = 0; col < size; col++) {
-            my_array[row][col] = rand() % 1001;
+            my_array[row][col] = rand() % 101;
         }
     }
 

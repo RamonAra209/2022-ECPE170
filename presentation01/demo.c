@@ -16,5 +16,5 @@ int main() {
     print_array(my_arr, size);
     printf("\nSum of array: %d\n", sum);
 
-    free_array(my_arr, size);
+    free_array(my_arr, size); 
 }

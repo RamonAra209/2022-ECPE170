@@ -6,7 +6,9 @@ CC=gcc
 #   -c :    Only compile (don't link)
 #   -Wall:  Enable all warnings about lazy / dangerous C programming 
 #   -std=c99: Using newer C99 version of C programming language
-CFLAGS=-c -Wall -std=c99 -g
+# 	-g allows for Valgrind to be used, to measure debugging information and memory leaks
+# 	-O 
+CFLAGS=-c -Wall -std=c99 -g -O1
 
 # All of the .h header files to use as dependencies
 HEADERS=demo.h demo_functions.h
