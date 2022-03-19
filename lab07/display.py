@@ -114,9 +114,13 @@ print(f"Connecting to server at {host} on port {str(port)}")
 # *****************************
 packet_byte = socket.recv(max_recv)
 byte_str = packet_byte
-while(packet_byte != b''):
-	packet_byte = socket.recv(max_recv)
-	byte_str += packet_byte
+while True:
+    packet_byte = socket.recv(max_recv)
+    if len(packet_byte) is 0:
+        socket.close()
+        break
+    else:
+        byte_str += packet_byte
 
 # *****************************
 # STUDENT WORK: 
