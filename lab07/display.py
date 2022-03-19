@@ -11,12 +11,9 @@
 import argparse
 import string
 import socket
-from struct import pack
 import sys
 import os
 from subprocess import call
-from time import process_time_ns
-from typing import ByteString
 from urllib.parse import urlparse
 
 # Size of receive buffer.
@@ -81,7 +78,7 @@ print("Preparing to download object from http://" + host + path + filename)
 #      must be provided at the end of the HTTP client request
 #      to the server? (otherwise, the server won't begin processing)
 # *****************************
-request = f"GET {path}{filename} HTTP/1.1 \r\nHost: {host}\r\nConnection: close \r\n\r\n"
+request = f"GET {path}{filename} HTTP/1.1\r\nHost: {host}\r\nConnection: close\r\n\r\n"
 print(request)
 
 # *****************************
@@ -94,18 +91,16 @@ print(request)
 #      prior to transmitting it.
 # *****************************
 try:
-    socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    socket.connect((host, port))
-    socket.sendall(bytes(request, 'ascii'))
-except socket.error as error_message:
+	socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	socket.connect((host,port))
+	socket.sendall(bytes(request,'ascii'))
+except socket.error as error_msg:
     print("Error: Socket could not be created")
-    print(f"Description: {error_message}")
+    print(f"Description: {str(error_msg)}")
     sys.exit()
-    
-print(f"Connect to server at {host} on port {str(port)}")
 
-
-
+print(f"Connecting to server at {host} on port {str(port)}")
+     
 
 # *****************************
 # STUDENT WORK: 
@@ -117,16 +112,11 @@ print(f"Connect to server at {host} on port {str(port)}")
 #      (i.e. no bytes received)
 #  (6) Close the socket - finished with the network now
 # *****************************
-packet = socket.recv(max_recv)
-packet_str = packet
-while True:
-    packet = socket.recv(max_recv)
-    packet_str += packet
-    if len(packet) is 0:
-        socket.close()
-        print("\n\nCLOSED SOCKET SINCE PACKET LEN = 0")
-        print(f"TYPE: {type(packet_str)}\n\n")
-        break
+packet_byte = socket.recv(max_recv)
+byte_str = packet_byte
+while(packet_byte != b''):
+	packet_byte = socket.recv(max_recv)
+	byte_str += packet_byte
 
 # *****************************
 # STUDENT WORK: 
@@ -137,11 +127,11 @@ while True:
 #  (9) Save the DATA to disk as a binary file. Somewhere
 #      in the /tmp directory would be a great spot.
 # *****************************
-split_packet = packet_str.split(b"\r\n\r\n")
-print(split_packet[0])
+splitPacket = byte_str.split(b"\r\n\r\n")
+print(splitPacket[0])
 saved_filename = "/tmp/picture"
 with open(saved_filename, 'w+b') as f:
-    f.write(split_packet[1])
+    f.write(splitPacket[1])
     f.close()
 
 # *****************************
