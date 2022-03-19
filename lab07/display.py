@@ -127,11 +127,11 @@ while(packet_byte != b''):
 #  (9) Save the DATA to disk as a binary file. Somewhere
 #      in the /tmp directory would be a great spot.
 # *****************************
-splitPacket = byte_str.split(b"\r\n\r\n")
-print(splitPacket[0])
+split_bstr = byte_str.split(b"\r\n\r\n")
+print(split_bstr[0])
 saved_filename = "/tmp/picture"
 with open(saved_filename, 'w+b') as f:
-    f.write(splitPacket[1])
+    f.write(split_bstr[1])
     f.close()
 
 # *****************************
