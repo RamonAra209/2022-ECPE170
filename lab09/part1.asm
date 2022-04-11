@@ -18,10 +18,19 @@ main:
 #   int Z=0;
 	# Z = (A+B) + (C-D) + (E+F) - (A-C);
 	lw $s0 z
-	add $t0, 15, 10 # (A + B)
-	sub $t1, 7, 2 # (C - D)
-	add $t2, 18, 3 # (E + F)
-	sub $t3, 15, 7 # (A - C)
+
+	addi $s0, $zero, 15 # A = 15
+	addi $s1, $zero, 10 # B = 10
+	addi $s2, $zero, 7 # C = 7
+	addi $s3, $zero, 2 # D = 2
+	addi $s4, $zero, 18 # E = 18
+	addi $s5, $zero, -3 # F = -3
+	addi $s6, $zero, 0 # Z = 0
+
+	add $t0, $s0, $s1 # (A + B)
+	sub $t1, $s2, $s3 # (C - D)
+	add $t2, $s4, $s5 # (E + F)
+	sub $t3, $s0, $s2 # (A - C)
 
 	# $t6 = Solution
 	add $t6, $t0, $t1 # Adding (A+B) + (C-D)
