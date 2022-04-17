@@ -23,28 +23,28 @@ main:
 	beq $t2, $t0, else_if # (C+1) == 7 
 	j else # jump to else block if beq == false
 
-if_statement:
-	addi $s3, $zero, 1
+if_statement: # if (A > B || C < 5)
+	addi $s3, $zero, 1 # Z =1
 	j switch
-else_if:
-	addi $s3, $zero, 2 
+else_if: # if ((A >B) && ((C + 1) == 7))
+	addi $s3, $zero, 2 # Z = 2 
 	j switch
-else:
-	addi $s3, $zero, 3
+else: 
+	addi $s3, $zero, 3 # Z + 3
 	j switch
 
 switch:
-	beq $s3, 1, case1
-	beq $s3, 2, case2
-	j default
+	beq $s3, 1, case1 # Check if Z == 1
+	beq $s3, 2, case2 # Check if Z == 2
+	j default # Else, jump to default
 	case1:
-		addi $s3, $zero, -1
+		addi $s3, $zero, -1 # Set Z to -1
 		j end
 	case2:
-		addi $s3, $zero, -2
+		addi $s3, $zero, -2 # Set Z to -2
 		j end
 	default:
-		addi $s3, $zero, 0
+		addi $s3, $zero, 0 # Set Z to 0
 		j end
 end:
 	sw $s3, z	
