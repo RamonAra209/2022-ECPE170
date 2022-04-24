@@ -142,9 +142,9 @@ get_random:
 	addu $t3,$t3,$s1	# (Z << 16) + W
 	
 	# For demo range 0-99
-	li $t4, 100
-	divu $t3, $t4
-	mfhi $t3
+	# li $t4, 100
+	# divu $t3, $t4
+	# mfhi $t3
 	
 	# Return result stored in $v0
 	move $v0,$t3
