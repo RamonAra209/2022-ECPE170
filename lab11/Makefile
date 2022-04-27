@@ -10,10 +10,10 @@ CC=gcc
 CFLAGS=-c -Wall -std=gnu99 
 
 # All of the .h header files to use as dependencies
-HEADERS=connect_four.h
+HEADERS=board.h
 
 # All of the object files to produce as intermediary work
-OBJECTS=connect_four.o
+OBJECTS=main.o board.o 
 
 # The final program to build
 EXECUTABLE=connect_four

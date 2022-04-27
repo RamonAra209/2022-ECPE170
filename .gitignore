@@ -1,2 +1,3 @@
 *.o
 *.DS_store
+/connect_four
