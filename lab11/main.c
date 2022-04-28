@@ -15,38 +15,47 @@ int main(int argc, char* argv[]) {
     printf("Number 2: ");
     scanf("%d", &m_z);
     printf("\n");
-
     printf("Human Player (H) \nComputer Player (C) \n");
-    printf("Coin toss... HUMAN goes first\n\n"); //! Change this later if you put random
-                                                 //! num generator to pick who goes first
                                                     
     char** board = create_board_arr();
-
     int* location;
     int win = 0;
+    int coin_flip = get_random() % 3; //! should be randm 1 or 0
+
+    if (coin_flip) {
+        printf("Coin toss... HUMAN goes first \n\n");
+    } else {
+        printf("Coin toss.. COMPUTER goes first \n\n");
+    }
+
+    if (coin_flip % 2) { print_board(board); } 
     do {
-        print_board(board);
-        int player_choice = 0;
-        printf("What column would you like to drop token into? Enter 1-7: ");
-        scanf("%d", &player_choice);
-        location = place_token('H', player_choice, board);
-
-        if (location[0] == 1) {
+        if (coin_flip % 2) {
+            int player_choice = 0;
+            do {
+                printf("What column would you like to drop token into? Enter 1-7: ");
+                scanf("%d", &player_choice);
+                location = place_token('H', player_choice, board);
+            } while (player_choice <= 0 || player_choice >= 8 || location[0] != 1);
             win = check_win('H', location[1], location[2], board);
-            if (win) break; 
+
+        } else {
+            do {
+                int computer_choice = random_in_range(1, 7);
+                location = place_token('C', computer_choice, board);
+                if (location[0] == 1) { 
+                    printf("Computer selected colum %d\n", location[2]);
+                    win = check_win('C', location[1], location[2], board);
+                }
+            } while (location[0] == 0); 
+            print_board(board);
         }
-
-        do {
-            int computer_choice = random_in_range(1, 7);
-            location = place_token('C', computer_choice, board);
-            if (location[0] == 1) { // If placement was valid, check win conditions
-                win = check_win('C', location[1], location[2], board);
-            }
-        } while (location[0] == 0); // As long as isValid != 1 (i.e. True)
+        coin_flip++;
     } while (win != 1);
-    print_board(board);
 
-    printf("Location: r=%d c=%d \n", location[1], location[2]);
+    // Printing who won
+    printf("\n\n   Final Board!");
+    print_board(board);
     if (board[location[1]][location[2]] == 'H') {
         printf("Congratulations, HUMAN winner!\n");
     } else if (board[location[1]][location[2]] == 'C') {
