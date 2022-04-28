@@ -37,14 +37,66 @@ void print_board(char** board) {
     printf("=================\n\n");
 }
 
-int place_token(char player, int col, char** board) {
+int* place_token(char player, int col, char** board) {
+    int result[3];
+    // result[0] = int representing bool of valid placement
+    // result[1] = if result[0] == 1, then result[1] = row placed at ]
+
     for (int row = 5; row >= 0; row--) {
         if (board[row][col] == '-') {
             board[row][col] = player;
-            return 1; //* Ends for loop, returns 1 (True) for valid move
+            result[0] = 1;
+            result[1] = row;
+            result[2] = col;
+            // return 1; //* Ends for loop, returns 1 (True) for valid move
+            return result;
         }
     } 
-    return 0; //* Returns 0 if invalid move
+    // return 0; //* Returns 0 if invalid move
+    result[0] = 0;
+    result[1] = 0;
+    result[2] = 0; 
+    return result;
+}
+
+// int check_win(char player, int* pos, char** board) {
+int check_win(char player, int l_row, int l_col, char** board) {
+    // int start_row = pos[2];
+    // int start_col = pos[3];
+    int thresh = 5;
+    int start_row = l_row;
+    int start_col = l_col;
+    int count = 0;
+    // Checking vertical condition
+    // for (int row = 0; row < 6; row++) {
+    //     if (board[row][start_col] == player) {
+    //         count++;
+    //         if (count >= thresh) { 
+    //             printf("\n\nVertical Condition Met \n\n");
+    //             return 1;
+    //         }
+    //     } else {
+    //         count = 0;
+    //     }
+    // }
+
+    // Horizontal Condition
+    // count = 0;
+    // for (int col = 0; col < 9; col++) {
+    //     if (board[start_row][col] == player) {
+    //         count++;
+    //         if (count >= thresh) {
+    //             printf("\n\nHorizontal Condition Met \n\n");
+    //             return 1;
+    //         }
+    //     } else {
+    //         count = 0;
+    //     }
+    // }
+    
+    // Diagonal Check
+    count = 0;
+    return 0;
 }
 
 uint32_t get_random() {
