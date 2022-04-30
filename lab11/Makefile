@@ -16,7 +16,7 @@ HEADERS=board.h
 OBJECTS=main.o board.o 
 
 # The final program to build
-EXECUTABLE=connect_four
+EXECUTABLE=connect_five_exec
 
 # --------------------------------------------
 
