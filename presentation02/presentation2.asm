@@ -8,51 +8,54 @@
 
 # The label 'main' represents the starting point
 main:
-        li $t0, 0               # i = 5
-        la $s0, array
+        li $t0, 0               # i = 0
+        la $s0, array           # load array into $s0
 
         for_loop:
-            bge $t0, 5, end
+            bge $t0, 5, end     # if $t0 >= 5, jump to end
 
-            lw $t1, 0($s0)
-            
-            li $v0, 4           # prints "Array["
-            la $a0, string_arr1
-            syscall
+            # else: 
+                lw $t1, 0($s0)      # load val from current position in stack 
+                
+                li $v0, 4           # 4 allows us to print string
+                la $a0, string_arr1 # load string 
+                syscall            # prints "Array["
 
-            li $v0, 1           # prints index
-            move $a0, $t0
-            syscall
-            
-            li $v0, 4           # prints "] = "
-            la $a0, string_arr2
-            syscall
+                li $v0, 1           # 1 allows us to print int 
+                move $a0, $t0       # load index into $a0 registry
+                syscall             # prints index
+                
+                li $v0, 4           # 4 allows us to print string 
+                la $a0, string_arr2 # load string into $a0 reigstry
+                syscall             # prints "] = "
 
-            li $v0, 1           # prints val at array[i]
-            move $a0, $t1
-            syscall
+                li $v0, 1           # 1 allows us to print int 
+                move $a0, $t1       # move val in stack to $a0
+                syscall             # prints val at array[i]
 
-            li $v0, 4           # prints "] = "
-            la $a0, new_line    # prints new line 
-            syscall
+                li $v0, 4           # 4 allows us to print string 
+                la $a0, new_line    # load string into $a0 registry 
+                syscall             # prints new line
 
-            addi $s0, $s0, 4    # moves pointer to next index in the array
-            addi $t0, $t0, 1    # i++
-            j for_loop
+                addi $s0, $s0, 4    # moves pointer to next index in the array
+                addi $t0, $t0, 1    # i++
+
+            j for_loop          # restart for loop
 
         end:
-            li $v0, 4               # prints "] = "
-            la $a0, string_sum_arr  # prints  
-            syscall
+            li $v0, 4               # 4 allows us to print string 
+            la $a0, string_sum_arr  # load string into $a0 registry 
+            syscall                 # print "Sum of array is "
             
+            # Recursive function call 
             # storing values into $a0 and $a1
             la $a0, array   # storing the array into $a0 
             li $a1, 5       # storing the length of the array into $a1
             jal sum_array
 
-            move $a0, $v0
-            li $v0, 1             
-            syscall
+            move $a0, $v0   # move value returned by function into $a0
+            li $v0, 1       # 1 allows us to print int
+            syscall         # print sum returned by recurisve function
 
         # Exit the program by means of a syscall.
         # There are many syscalls - pick the desired one
